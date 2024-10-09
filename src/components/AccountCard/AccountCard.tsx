@@ -11,7 +11,7 @@ import cn from "classnames";
 function AccountCard({ summa, name, account, idAccount }: AccountCardProps) {
   const dispatch = useDispatch<AppDispatch>();
   const { id } = useSelector((s: RootState) => s.selectedId);
-  const formattedNumber = summa.toLocaleString("ru-RU");
+  const formattedNumber = (summa/100).toLocaleString("ru-RU");
   const openAccount = () => {
     dispatch(selectThisId(idAccount));
   };
