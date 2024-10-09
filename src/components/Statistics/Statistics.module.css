@@ -9,7 +9,7 @@
 .statistics__h3 {
 	text-align: left;
 	font-size: 24pt;
-	font-weight: 400;
+	font-weight: semiBold;
 	letter-spacing: 0.04em;
 	color: #2e2e2e;
 	margin-bottom: 42px;
@@ -41,7 +41,7 @@
 
 .statistics__month-title {
 	text-align: left;
-	font-size: 17pt;
+	font-size: 16pt;
 	font-weight: 400;
 	letter-spacing: 0.04em;
 	color: #2e2e2e;

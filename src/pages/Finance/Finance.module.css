@@ -6,7 +6,7 @@
   flex-direction: column;
 }
 
-.finance-h1 {
+.finance__h1 {
   font-size: 48pt;
   font-weight: Bold;
   letter-spacing: 0.04em;
@@ -14,7 +14,7 @@
   color: #2e2e2e;
 }
 
-.finance-p {
+.finance__p {
   text-align: left;
   max-width: 416px;
   font-size: 13pt;
