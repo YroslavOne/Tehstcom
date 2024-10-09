@@ -1,0 +1,15 @@
+#root {
+  max-width: 1920px;
+  margin: 0 ;
+  padding: 0;
+  text-align: center;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #e6e7e9;
+}
+h1, h2, h3, h4, h5,h6,p,li,ul,a{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

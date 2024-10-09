@@ -1,0 +1,15 @@
+.Main{
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.Main__h1 {
+  font-size: 48pt;
+  font-weight: Bold;
+  letter-spacing: 0.04em;
+  line-height: 54pt;
+  color: #2e2e2e;
+}

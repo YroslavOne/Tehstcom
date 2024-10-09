@@ -1,0 +1,63 @@
+.account-card__li {
+  height: 100%;
+  width: 277px;
+  min-width: 277px;
+  background-color: #f4f5f7;
+  border-radius: 10px;
+  padding: 17px 19px 9px 17px;
+}
+
+.account-card {
+}
+.account-card__li-active {
+  background-color: #ffff00;
+}
+.account-card__head {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.account-card__head > img:nth-child(1) {
+  width: 26px;
+  height: 26px;
+}
+.account-card__head > img:nth-child(2) {
+  width: 24px;
+  height: 24px;
+}
+.account-card__summa {
+  font-size: 21pt;
+  font-weight: Bold;
+  letter-spacing: 0.04em;
+  color: #2e2e2e;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.account-card__summa-img {
+  width: 21px;
+  height: 21px;
+}
+.account-card__name {
+  font-size: 16px;
+  font-weight: Bold;
+  letter-spacing: 0.04em;
+  color: #2e2e2e;
+  margin-top: 14px;
+  align-content: flex-start;
+  text-align: left;
+}
+.account-card__account {
+  font-size: 12px;
+  font-weight: Bold;
+  letter-spacing: 0.04em;
+  color: #2e2e2e;
+  margin-top: 14px;
+  align-content: flex-start;
+  text-align: left;
+  margin-top: -1px;
+}

@@ -1,0 +1,25 @@
+.finance {
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.finance-h1 {
+  font-size: 48pt;
+  font-weight: Bold;
+  letter-spacing: 0.04em;
+  line-height: 54pt;
+  color: #2e2e2e;
+}
+
+.finance-p {
+  text-align: left;
+  max-width: 416px;
+  font-size: 13pt;
+  font-weight: Bold;
+  letter-spacing: 0.04em;
+  line-height: 19pt;
+  color: #6a6a6a;
+}
