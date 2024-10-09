@@ -1,0 +1,59 @@
+.statistics {
+	width: 227px;
+	padding: 24px 25px;
+	background-color: #f4f5f7;
+	height: 320px;
+	border-radius: 10px;
+}
+
+.statistics__h3 {
+	text-align: left;
+	font-size: 24pt;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	color: #2e2e2e;
+	margin-bottom: 42px;
+}
+
+.statistics__name {
+	margin-bottom: 26px;
+}
+
+.statistics__name-h4 {
+	text-align: left;
+	font-size: 24pt;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	color: #2e2e2e;
+	text-transform: uppercase;
+	margin-bottom: 7px;
+}
+
+.statistics__name-inn {
+	text-align: left;
+	font-size: 12pt;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	color: #2e2e2e;
+}
+
+.statistics__month {}
+
+.statistics__month-title {
+	text-align: left;
+	font-size: 17pt;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	color: #2e2e2e;
+	margin-bottom: 6px;
+
+}
+
+.statistics__month-money {
+	text-align: left;
+		font-size: 21pt;
+		font-weight: 400;
+		letter-spacing: 0.04em;
+		color: #2e2e2e;
+		margin-bottom: 26px;
+}

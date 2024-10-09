@@ -1,0 +1,53 @@
+.paymants {
+	max-width: 829px;
+	width: 829px;
+	height: 685px;
+	background-color: #f4f5f7;
+	border-radius: 10px;
+	padding: 28px 18px;
+	overflow-x: scroll;
+}
+
+.paymants-h3 {
+	text-align: left;
+	font-size: 24pt;
+	font-weight: Bold;
+	letter-spacing: 0.04em;
+	color: #2e2e2e;
+	margin-bottom: 37px;
+}
+
+.paymants__table-tr>th {
+	text-align: left;
+	font-size: 16pt;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+	color: #2e2e2e;
+	margin-bottom: 37px;
+}
+
+.paymants__table {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+.paymants__tbody {}
+
+.paymants__table th,
+.paymants__table td {
+	padding: 5px;
+}
+
+
+.paymants__table td {
+	border-right: 2px solid #ddd;
+}
+
+.paymants__table td:last-child {
+	border-right: none;
+}
+
+.paymants__table th:not(:last-child) {
+	border-right: 2px solid #ccc;
+}

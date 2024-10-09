@@ -1,35 +1,53 @@
-import { useDispatch, useSelector } from "react-redux";
-import { AppDispatch, RootState } from "../../store/store";
-import PaymentCard from "../PaymentCard/PaymentCard";
-import { useEffect } from "react";
-import { getPayments } from "../../store/payment";
+import { useSelector } from 'react-redux';
+import { RootState } from '../../store/store';
+import PaymentCard from '../PaymentCard/PaymentCard';
+import styles from './Payments.module.css'
 
 function Paymants() {
-  const dispatch = useDispatch<AppDispatch>();
-  const { id } = useSelector((s: RootState) => s.selectedId);
-  useEffect(() => {
-    dispatch(getPayments(id));
-  }, [dispatch]);
-  const { elements, paymentsErrorMessage } = useSelector(
+  const { elements, paymentsErrorMessage, isLoading } = useSelector(
     (s: RootState) => s.payments
   );
-  
 
   return (
-    <div>
-      <h3></h3>
-      <table>
-        <thead>
-          <tr>
-            <th>№</th>
-            <th>Плательщик</th>
-            <th>ИНН</th>
-            <th>Сумма</th>
-            <th>Дата</th>
-          </tr>
-        </thead>
-        <tbody>{!paymentsErrorMessage ? elements.map((item, index)=>(<PaymentCard correspondent={item.correspondent} index={index} inn={item.inn} s_date={item.s_date} summa={item.summa} key={item.id} />)) : <div>{paymentsErrorMessage}</div>}</tbody>
-      </table>
+    <div className={styles['paymants']}>
+      <h3 className={styles['paymants-h3']}>Платежи</h3>
+      {isLoading ? (
+        <div>Загрузка...</div>
+      ) : (
+        <table role="rows" className={styles['paymants__table']}>
+          <thead>
+            <tr className={styles['paymants__table-tr']}>
+              <th>№</th>
+              <th>Плательщик</th>
+              <th>Инн</th>
+              <th>Сумма</th>
+              <th>Дата</th>
+            </tr>
+          </thead>
+          <tbody className={styles['paymants__tbody']}>
+            {!paymentsErrorMessage ? (
+              Array.isArray(elements) ? (
+                elements.map((item, index) => (
+                  <PaymentCard
+                    correspondent={item.correspondent}
+                    index={index}
+                    inn={item.inn}
+                    s_date={item.s_date}
+                    summa={item.summa}
+                    key={item.id}
+                  />
+                ))
+              ) : (
+                <tr>
+                  <td colSpan={5}>Нет данных для отображения</td>
+                </tr>
+              )
+            ) : (
+              <div>{paymentsErrorMessage}</div>
+            )}
+          </tbody>
+        </table>
+      )}
     </div>
   );
 }

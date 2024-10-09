@@ -23,3 +23,8 @@
   line-height: 19pt;
   color: #6a6a6a;
 }
+.finance__data{
+	display: flex;
+	gap: 17px;
+	margin-top: 50px;
+}
