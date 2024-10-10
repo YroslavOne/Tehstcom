@@ -14,3 +14,39 @@
   justify-content: flex-start;
   gap: 18px;
 }
+
+@media (min-width: 1600px) {
+  .accounts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1161px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .finance__accounts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+  }
+}
+@media (max-width: 1599px) {
+  .accounts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .finance__accounts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+  }
+}

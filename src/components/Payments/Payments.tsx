@@ -1,7 +1,7 @@
-import { useSelector } from 'react-redux';
-import { RootState } from '../../store/store';
-import PaymentCard from '../PaymentCard/PaymentCard';
-import styles from './Payments.module.css'
+import { useSelector } from "react-redux";
+import { RootState } from "../../store/store";
+import PaymentCard from "../PaymentCard/PaymentCard";
+import styles from "./Payments.module.css";
 
 function Paymants() {
   const { elements, paymentsErrorMessage, isLoading } = useSelector(
@@ -9,14 +9,14 @@ function Paymants() {
   );
 
   return (
-    <div className={styles['paymants']}>
-      <h3 className={styles['paymants-h3']}>Платежи</h3>
+    <div className={styles["paymants"]}>
+      <h3 className={styles["paymants-h3"]}>Платежи</h3>
       {isLoading ? (
         <div>Загрузка...</div>
       ) : (
-        <table role="rows" className={styles['paymants__table']}>
+        <table role="rows" className={styles["paymants__table"]}>
           <thead>
-            <tr className={styles['paymants__table-tr']}>
+            <tr className={styles["paymants__table-tr"]}>
               <th>№</th>
               <th>Плательщик</th>
               <th>Инн</th>
@@ -24,7 +24,7 @@ function Paymants() {
               <th>Дата</th>
             </tr>
           </thead>
-          <tbody className={styles['paymants__tbody']}>
+          <tbody className={styles["paymants__tbody"]}>
             {!paymentsErrorMessage ? (
               Array.isArray(elements) ? (
                 elements.map((item, index) => (

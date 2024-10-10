@@ -6,3 +6,15 @@
 }
 .outlet {
 }
+
+@media (min-width: 1600px) {
+  .laoyout {
+    grid-template-columns: 303px 1159px;
+  }
+}
+@media (max-width: 1599px) {
+  .laoyout {
+    grid-template-columns: 20% 75%;
+    margin: 20px 20px 20px 20px;
+  }
+}

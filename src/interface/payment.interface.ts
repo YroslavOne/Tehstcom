@@ -1,4 +1,4 @@
-export interface Payment{
+export interface Payment {
     id: number,
     s_is_supplier: string,
     s_date: string,

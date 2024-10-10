@@ -17,7 +17,6 @@ const initialState: PaymentState = {
   our_account: null,
   paymentsErrorMessage: undefined,
   isLoading: false,
-  // isPending: true,
 };
 
 export const getPayments = createAsyncThunk<

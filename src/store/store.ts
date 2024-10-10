@@ -1,6 +1,6 @@
 import accountSlice from "./accounts";
 import { configureStore } from "@reduxjs/toolkit";
-import  paymentsSlice  from "./payment";
+import paymentsSlice from "./payment";
 import selectedIdSlice from './selectedId'
 
 export const store = configureStore({

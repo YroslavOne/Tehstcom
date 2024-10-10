@@ -49,6 +49,9 @@
   margin-top: 14px;
   align-content: flex-start;
   text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .account-card__account {
   font-size: 12px;

@@ -14,7 +14,6 @@ const selectedIdSlice = createSlice({
   reducers: {
     selectThisId: (state, action: PayloadAction<number | null>) => {
       state.id = action.payload;
-      console.log(action.payload)
     },
   },
 });

@@ -22,9 +22,56 @@
   letter-spacing: 0.04em;
   line-height: 19pt;
   color: #6a6a6a;
+  margin-bottom: 19px;
 }
-.finance__data{
-	display: flex;
-	gap: 17px;
-	margin-top: 50px;
+.finance__data {
+  display: flex;
+  gap: 17px;
+  margin-top: 50px;
+}
+
+@media (min-width: 1600px) {
+  .finance {
+    margin-top: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .finance__h1 {
+    font-size: 48pt;
+    font-weight: Bold;
+    letter-spacing: 0.04em;
+    line-height: 54pt;
+    color: #2e2e2e;
+  }
+
+  .finance__p {
+    text-align: left;
+    max-width: 416px;
+    font-size: 13pt;
+    font-weight: Bold;
+    letter-spacing: 0.04em;
+    line-height: 19pt;
+    color: #6a6a6a;
+  }
+  .finance__data {
+    display: flex;
+    gap: 17px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 1599px) {
+  .finance {
+    width: 100%;
+  }
+  .finance__data {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+  .laoyout {
+    grid-template-columns: 20% 75%;
+  }
 }

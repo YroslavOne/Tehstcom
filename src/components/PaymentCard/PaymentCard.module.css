@@ -1,34 +1,31 @@
-.payment__card>td {
-	width: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	text-align: left;
-	font-size: 16pt;
-	font-weight: 400;
-	letter-spacing: 0.04em;
-	line-height: 17pt;
-	color: #2e2e2e;
+.payment__card > td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+  font-size: 14pt;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  line-height: 17pt;
+  color: #2e2e2e;
 }
 
 .payment__number {
-	width: 2px;
-	padding-left: 0;
+  width: 2px;
+  padding-left: 0;
 }
 
 .payment__correspondent {
-	max-width: 290px;
-
+  max-width: 290px;
 }
 
 .payment__inn {
-	max-width: 128px;
-
+  max-width: 128px;
 }
 
 .payment__rubles {
-	max-width: 182px;
-
+  max-width: 182px;
 }
 
-.payment__date {}
+.payment__date {
+}
